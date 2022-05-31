@@ -8,4 +8,4 @@ var cidadeSchema = new mongoose.Schema({
     distrito: String
 })
 
-module.exports = mongoose.model('cidade', cidadeSchema)
+module.exports = mongoose.model('cidades', cidadeSchema)

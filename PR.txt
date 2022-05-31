@@ -1,0 +1,11 @@
+Para o data cleansing dividi o ficheiro JSON em 2 ficheiros JSON distintos, 1 com as ligações e outro com as cidades.
+E depois criei duas collections uma chamada ligacoes e outra cidades, importando o ficheiro JSON respetivo.
+
+
+1ª : http://clav-api.di.uminho.pt/v2/classes/c750/descendencia?token=
+
+2ª : http://clav-api.di.uminho.pt/v2/entidades?token=
+
+3ª : 
+
+4ª :
