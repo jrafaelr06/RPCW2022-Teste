@@ -1,0 +1,17 @@
+extends layout 
+
+block content 
+    div(class="w3-container w3-teal")
+        h2  Lista de Termos de índice
+    table(class="w3-table w3-bordered")
+        tr 
+            th Termo
+            th Id da classe
+            th Titulo da classe
+        each t in termos
+            tr 
+                th= t.termo
+                th
+                    a(href="/codigo/" + t.idClasse)= t.idClasse
+                th
+                    a(href="/codigo/" + t.idClasse)= t.tituloClasse
