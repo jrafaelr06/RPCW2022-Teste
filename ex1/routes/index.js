@@ -30,7 +30,9 @@ router.get('/cidades/nomes', function(req, res) {
 })
 
 router.get('/distritos', function(req, res) {
-  res.send({})
+  Controller.distritos()
+    .then(data => res.send(data))
+    .catch(error => res.status(503).send({ error: error }))
 })
 
 router.get('/ligacoes', function(req, res) {

@@ -26,6 +26,13 @@ module.exports.distrito = distrito => {
         .exec()
 }
 
+module.exports.distritos = () => {
+    return Cidade
+        .find()
+        .group({_id: distrito})
+        .exec()
+}
+
 module.exports.origem = origem => {
     return Ligacoes
         .find({origem: origem}, {id: 1, destino: 1})
